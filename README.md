@@ -2,6 +2,8 @@
 
 A voluntary disclosure standard for authors to communicate how much AI contributed to a written work (AIL-1 to AIL-12).
 
+**[Try it live: shebaaa7.github.io/ail-scale](https://shebaaa7.github.io/ail-scale/)**
+
 This site has the full scale, a "find your level" questionnaire, and a badge and disclosure-statement generator.
 
 ## Run locally
@@ -11,9 +13,8 @@ Open `index.html` in a browser. There is no build step and no dependencies.
 All level text is in `levels.js`. Change the wording there and the cards, questionnaire results, and statements update.
 The questionnaire's questions are in `app.js` (`Q1`, `Q2`).
 
-## Publish with GitHub Pages
-Settings > Pages > Deploy from branch `main`, folder `/ (root)`.
-(Free GitHub accounts need a public repo for Pages.)
+## Publishing
+The site is served by GitHub Pages from the `main` branch, root folder. Pushing to `main` updates the live site in about a minute.
 
 ## License
 - **The AIL Scale text** (level definitions and wording): [CC BY 4.0](LICENSE-CC-BY-4.0.txt). Reuse and adapt freely with credit to shebaaa7.
