@@ -14,3 +14,9 @@ The questionnaire's questions are in `app.js` (`Q1`, `Q2`).
 ## Publish with GitHub Pages
 Settings > Pages > Deploy from branch `main`, folder `/ (root)`.
 (Free GitHub accounts need a public repo for Pages.)
+
+## License
+- **The AIL Scale text** (level definitions and wording): [CC BY 4.0](LICENSE-CC-BY-4.0.txt). Reuse and adapt freely with credit to shebaaa7.
+- **Site code** (`index.html`, `app.js`, `style.css`): [MIT](LICENSE).
+
+If you publish a modified version of the scale, please give it a different name so it isn't confused with the original AIL Scale.
