@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIL Scale</title>
+<meta name="description" content="AIL Scale: a voluntary disclosure standard for how much AI contributed to a written work.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Version July 2026</p>
+    <h1>AIL Scale <span>AI Involvement Level</span></h1>
+    <p class="lede">A voluntary disclosure standard for authors to communicate how much artificial intelligence contributed to a written work. Each level describes what the AI performed and what the human author performed.</p>
+    <nav>
+      <a href="#scale">The scale</a>
+      <a href="#find">Find your level</a>
+      <a href="#badge">Badge &amp; statement</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="scale">
+    <h2>The scale</h2>
+    <div class="note">
+      <strong>What this scale does not track.</strong> AI used purely as a research or search tool, such as looking up historical details, technical facts, or reference information, is treated the same as using Google or Bing. It is research, not authorship contribution. The scale tracks AI involvement in developing the story itself: planning, drafting, and editing the manuscript's actual content.
+    </div>
+    <div class="split" aria-hidden="true">
+      <div class="assist"><b>AIL-1 to AIL-6</b> AI assists human writing</div>
+      <div class="direct"><b>AIL-7 to AIL-12</b> Human directs AI writing</div>
+    </div>
+    <div id="cards" class="cards"></div>
+    <p class="small">Authors may note a range (e.g. AIL-7 to AIL-8) if their process varied across the manuscript. For AIL-7 through AIL-11, report whether planning materials (outlines, character profiles, timelines, worldbuilding files) were developed independently or collaboratively with AI before drafting began. That is a separate question from who wrote the prose, and both should be reported honestly.</p>
+  </section>
+
+  <section id="find">
+    <h2>Find your level</h2>
+    <p>A few questions to suggest where your process lands. It is only a suggestion; the scale is self-reported and the final call is yours.</p>
+    <div id="wizard" class="panel"></div>
+  </section>
+
+  <section id="badge">
+    <h2>Badge &amp; statement</h2>
+    <p>Pick a level or range, then copy a badge and disclosure statement for your book page, copyright page, or store listing.</p>
+    <div class="panel grid2">
+      <div class="controls">
+        <label>Level (or top of range)
+          <select id="hi"></select>
+        </label>
+        <label class="check"><input type="checkbox" id="varied"> My process varied; report a range</label>
+        <label id="loWrap" hidden>Low end of range
+          <select id="lo"></select>
+        </label>
+        <label id="planWrap">Planning materials
+          <select id="plan">
+            <option value="">Not specified</option>
+            <option value="independent">Developed independently</option>
+            <option value="collaborative">Developed collaboratively with AI</option>
+          </select>
+        </label>
+        <label>Work title (optional)
+          <input type="text" id="title" placeholder="My Novel">
+        </label>
+      </div>
+      <div class="output">
+        <div id="badgeBox" class="badgebox"></div>
+        <div class="btns">
+          <button id="dlSvg">Download SVG</button>
+          <button id="cpSvg" class="ghost">Copy SVG code</button>
+        </div>
+        <label>Disclosure statement
+          <textarea id="statement" rows="5" readonly></textarea>
+        </label>
+        <div class="btns"><button id="cpStmt">Copy statement</button><span id="toast" role="status"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>This scale is self-reported and reflects the author's honest assessment of their process.</p>
+    <p>This scale itself was developed collaboratively with AI (Claude), which is fitting given the subject matter. AIL-4ish, if we're being honest: every substantive decision was directed by the human author, and AI helped articulate and organize it.</p>
+  </section>
+</main>
+<footer><div class="wrap">AIL Scale, July 2026</div></footer>
+
+<script src="levels.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
